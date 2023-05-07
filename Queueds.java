@@ -19,6 +19,15 @@ public class Queueds {
             arr[rear]=n;
         }
     }
+    public void deQueue(){
+        if(rear==-1){
+            System.out.println("Queue is empty");
+        }
+        else{
+            front+=1;
+
+        }
+    }
     public void peek(){
         if(rear!=-1){
             System.out.println("top element is " + arr[front]);
@@ -36,8 +45,8 @@ public class Queueds {
         st.enQueue(36);
         st.enQueue(56);
         st.show();
-
-
+        st.deQueue();
+        st.show();
         st.peek();
 
 
